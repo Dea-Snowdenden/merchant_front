@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-// import { Form} from 'react-boostrap';
+import { Table } from 'react-bootstrap';
 
 
 class App extends Component {
@@ -59,22 +58,22 @@ class App extends Component {
     <div>
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo"/>
           <h1 className="App-title">API</h1>
         </header>
       </div>
-      <table>
+      <Table striped bordered condensed hover>
+        <thead>
         <tr>
-          <th><h2>Image</h2></th>
-          <th><h2>Display Name</h2></th>
-          <th><h2>Email</h2></th>
-          <th><h2>Phone</h2></th>
-          <th><h2>Phone</h2></th>
-          <th><h2>Status</h2></th>
-          <th><h2>Address</h2></th>
+          <th id="titlebar">Image</th>
+          <th>Display Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Status</th>
+          <th>Address</th>
         </tr>
         {data_list}
-      </table>
+        </thead>
+      </Table>
     </div>
   );
 }
