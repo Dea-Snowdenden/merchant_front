@@ -30,4 +30,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ![alt-text](images/postman.png)
 
-![alt-text](apisample.png)
+![alt-text](images/apisample.png)
